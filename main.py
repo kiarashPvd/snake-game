@@ -1,7 +1,4 @@
-import pygame
-import time
-import random
-import os
+import pygame, time, random, os
 
 pygame.init()
 
