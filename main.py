@@ -11,15 +11,15 @@ red = (213, 50, 80)
 green = (0, 255, 0)
 blue = (50, 153, 213)
 
-width = 600
-height = 400
+width = 800
+height = 600
 
 dis = pygame.display.set_mode((width, height))
 pygame.display.set_caption('Snake Game by Kiarash payervand')
 
 clock = pygame.time.Clock()
 snake_block = 10
-snake_speed = 15
+snake_speed = 11
 
 font_style = pygame.font.SysFont("bahnschrift", 25)
 score_font = pygame.font.SysFont("comicsansms", 20)
