@@ -24,7 +24,6 @@ snake_speed = 11
 font_style = pygame.font.SysFont("bahnschrift", 25)
 score_font = pygame.font.SysFont("comicsansms", 20)
 
-# خواندن رکورد از فایل
 def get_high_score():
     if os.path.exists("highscore.txt"):
         with open("highscore.txt", "r") as f:
@@ -65,7 +64,7 @@ def game_loop():
     foodx = round(random.randrange(0, width - snake_block) / 10.0) * 10.0
     foody = round(random.randrange(0, height - snake_block) / 10.0) * 10.0
 
-    direction = "RIGHT"  # جهت اولیه
+    direction = "RIGHT"  
 
     while not game_over:
 
