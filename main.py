@@ -67,7 +67,7 @@ def game_loop():
 
         while game_close:
             dis.fill(white)
-            message("Game Over! Press E Play Again or Q Quit", black)
+            message("Press E Play Again", black)
             score_display(length_of_snake - 1, high_score)
             pygame.display.update()
 
@@ -77,7 +77,7 @@ def game_loop():
 
             for event in pygame.event.get():
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_q:
+                    if event.key == pygame.K_esc:
                         game_over = True
                         game_close = False
                     if event.key == pygame.K_e:
