@@ -12,7 +12,7 @@ width = 800
 height = 600
 
 dis = pygame.display.set_mode((width, height))
-pygame.display.set_caption('Snake Game by Kiarash payervand')
+pygame.display.set_caption('Kiarash payervand')
 
 clock = pygame.time.Clock()
 snake_block = 10
@@ -110,7 +110,7 @@ def game_loop():
         x1 += x1_change
         y1 += y1_change
         dis.fill(black)
-        pygame.draw.rect(dis, green, [foodx, foody, snake_block, snake_block])
+        pygame.draw.rect(dis, white, [foodx, foody, snake_block, snake_block])
         snake_head = [x1, y1]
         snake_list.append(snake_head)
 
